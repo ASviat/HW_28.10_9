@@ -6,4 +6,16 @@
 
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
+AllNumbers(number);
 
+int AllNumbers(int num)
+{
+    int i = default;
+    if (num == 0) return 1;
+    else
+    {
+        Console.Write($"{num - i} ");
+        i++;
+        return AllNumbers(num - i);
+    }
+}
